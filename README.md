@@ -1,4 +1,5 @@
 # Hecate Super-Resolution (HSR)
+> This HSR model is for [nasa-hecate](https://github.com/AutoML-NASA/nasa-hecate) projects
 
 A lightweight ×4 image super-resolution repository implemented on top of **BasicSR (1.4.2)** for reproducible inference. The default example uses `test_options/SMFANet_DIV2K_x4SR.yml`.
 
