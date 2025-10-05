@@ -46,6 +46,7 @@ python infer.py -opt test_options/SMFANet_DIV2K_x4SR.yml
 - With BasicSR 1.4.2, dataset loader keys (e.g., `dataroot_*`, `io_backend`) must match your data layout.
 
 ## Citation
+- This repository references and builds upon the paper cited above.
 ```bibtex
 @inproceedings{smfanet,
     title={SMFANet: A Lightweight Self-Modulation Feature Aggregation Network for Efficient Image Super-Resolution},
