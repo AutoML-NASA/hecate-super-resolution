@@ -13,7 +13,7 @@ A lightweight ×4 image super-resolution repository implemented on top of **Basi
 ## Installation
 ```bash
 # Clone
-git clone "<YOUR_REPO_URL>"
+git clone "https://github.com/AutoML-NASA/hecate-super-resolution.git"
 cd hecate-super-resolution
 
 # Conda env
