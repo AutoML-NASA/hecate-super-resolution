@@ -1,0 +1,50 @@
+# general settings
+name: SMFAN_x4
+model_type: SRModel
+scale: 4
+num_gpu: 1
+manual_seed: 0
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: test_ours
+    #type: PairedImageDataset
+    type: SingleImageDataset
+    #dataroot_gt: ./GT
+    dataroot_lq: ./LR
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: SMFANet
+  dim: 36
+  n_blocks: 8
+  ffn_scale: 2
+  upscaling_factor: 4
+
+
+
+# path# path
+path:
+  pretrain_network_g: ./pre_trained/our_model.pth
+  strict_load_g: true
+  param_key: ~
+  visualization: ./results
+# validation settings
+
+val:
+  save_img: true
+  flip_seq: true
+  center_frame_only: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  # metrics:
+  #   psnr: # metric name, can be arbitrary
+  #     type: calculate_psnr
+  #     crop_border: 4
+  #     test_y_channel: true
+  #   ssim:
+  #     type: calculate_ssim
+  #     crop_border: 4
+  #     test_y_channel: true
